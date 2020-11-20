@@ -16,10 +16,6 @@ workflows:
                 # build Android
                 cd android
                 ./gradlew assembleRelease
-                curl \
-  -H "Authorization: token d5768523-3641-4804-b6e9-35040fd6da73" \
-  -F "file=@android/app/build/outputs/**/*.apk" \
-  -F "message=test2" \
-  "https://deploygate.com/api/users/thanhhv_neos/apps"
+                curl -H "Authorization: token d5768523-3641-4804-b6e9-35040fd6da73" -F "file=@android/app/build/outputs/**/*.apk" -F "message=test2" "https://deploygate.com/api/users/thanhhv_neos/apps"
         artifacts:
             - android/app/build/outputs/**/*.apk
