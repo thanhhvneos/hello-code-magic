@@ -16,10 +16,5 @@ workflows:
                 # build Android
                 cd android
                 ./gradlew assembleRelease
-                cd $FCI_BUILD_DIR/android/app/build
-                cd outputs/
-                cd apk/
-                ls
-                cd release/
-                ls
-                # curl -H "Authorization: token d5768523-3641-4804-b6e9-35040fd6da73" -F "file=@hello.apk" -F "message=test2" "https://deploygate.com/api/users/thanhhv_neos/apps"
+                cd $FCI_BUILD_DIR/android/app/build/outputs/apk/release
+                curl -H "Authorization: token d5768523-3641-4804-b6e9-35040fd6da73" -F "file=@app-release.apk" -F "message=test2" "https://deploygate.com/api/users/thanhhv_neos/apps"

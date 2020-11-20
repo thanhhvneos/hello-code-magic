@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "864560533970",
+    "firebase_url": "https://hello-codemagic-ci.firebaseio.com",
+    "project_id": "hello-codemagic-ci",
+    "storage_bucket": "hello-codemagic-ci.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864560533970:android:680dee89e53cce35b7780b",
+        "android_client_info": {
+          "package_name": "com.hellocodemagic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864560533970-5m3qpl1omvf96ng0hgd4klg06fqno820.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOy1vXOSHpqRxhL2udCVTJK75JoEOwkio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864560533970-5m3qpl1omvf96ng0hgd4klg06fqno820.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
