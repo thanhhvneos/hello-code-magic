@@ -16,8 +16,8 @@ workflows:
                 # build Android
                 cd android
                 ./gradlew assembleRelease
-                cd app/build/output/apk
+                cd app/
                 ls
-                
+
         artifacts:
-            - android/app/build/outputs/**/*.apk
+            - android/app/hello.apk
