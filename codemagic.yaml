@@ -16,12 +16,10 @@ workflows:
                 # build Android
                 cd android
                 ./gradlew assembleRelease
-            - |
-                # build iOS
-                # cd ios
-                # pod install
-                # xcodebuild build -workspace "$XCODE_WORKSPACE.xcworkspace" -scheme "$XCODE_SCHEME" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+                curl \
+  -H "Authorization: token d5768523-3641-4804-b6e9-35040fd6da73" \
+  -F "file=@android/app/build/outputs/**/*.apk" \
+  -F "message=test2" \
+  "https://deploygate.com/api/users/thanhhv_neos/apps"
         artifacts:
             - android/app/build/outputs/**/*.apk
-            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
